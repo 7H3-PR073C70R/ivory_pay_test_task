@@ -25,7 +25,7 @@ jobs:
 
       - uses: subosito/flutter-action@v2
         with:
-          version: "3.24.0"
+          version: "3.4.0"
           channel: "stable"
           
       - run: touch  - .env.development
