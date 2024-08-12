@@ -100,9 +100,6 @@ $ open coverage/index.html
 │     │     └── widgets
 │     │        
 ```
-# Screen Record
-
-https://www.loom.com/share/cd87e95a0c1043c297581d4bd911264b?sid=58f4c413-ac5e-4fc5-b7a7-4c65aaae8eb1
 
 # APK
 
