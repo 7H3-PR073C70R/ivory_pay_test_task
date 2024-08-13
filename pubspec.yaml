@@ -32,7 +32,10 @@ dependencies:
   file_picker: ^8.0.7 
   image_picker: ^1.1.0
   equatable: ^2.0.5
-  qr_code_scanner: ^0.4.0
+  qr_code_scanner: 
+    git:
+      url: https://github.com/7H3-PR073C70R/qr_code_scanner.git
+      ref: master
   blue_thermal_printer: ^1.2.3
 
 dev_dependencies:

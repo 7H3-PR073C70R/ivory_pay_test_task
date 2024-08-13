@@ -68,7 +68,7 @@ class _QRCodeScannerState extends State<QRCodeScanner> {
     });
     controller.scannedDataStream.listen((data) {
       debugPrint(data.code);
-      context.read<QrCodeCubit>().updateQRModel(data.code);
+      context.read<QrCodeCubit>().updateQRModel(data.code ?? '');
     });
   }
 

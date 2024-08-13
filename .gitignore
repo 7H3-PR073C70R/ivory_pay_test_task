@@ -110,6 +110,12 @@ app.*.map.json
 !.idea/codeStyles/
 !.idea/dictionaries/
 !.idea/runConfigurations/
+
+
+# Exclude files
 .env.development
 .env.production
 .env.staging
+*.gr.dart
+*.g.dart
+*.freezed.dart

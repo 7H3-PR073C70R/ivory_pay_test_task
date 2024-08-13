@@ -39,8 +39,12 @@ mixin _$ReceiptModel {
   @JsonKey(name: "printer_status")
   String? get printerStatus => throw _privateConstructorUsedError;
 
+  /// Serializes this ReceiptModel to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of ReceiptModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $ReceiptModelCopyWith<ReceiptModel> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -73,6 +77,8 @@ class _$ReceiptModelCopyWithImpl<$Res, $Val extends ReceiptModel>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of ReceiptModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -155,6 +161,8 @@ class __$$ReceiptModelImplCopyWithImpl<$Res>
       _$ReceiptModelImpl _value, $Res Function(_$ReceiptModelImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of ReceiptModel
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -291,7 +299,7 @@ class _$ReceiptModelImpl implements _ReceiptModel {
                 other.printerStatus == printerStatus));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode => Object.hash(
       runtimeType,
@@ -305,7 +313,9 @@ class _$ReceiptModelImpl implements _ReceiptModel {
       paymentStatus,
       printerStatus);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of ReceiptModel
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$ReceiptModelImplCopyWith<_$ReceiptModelImpl> get copyWith =>
@@ -362,8 +372,11 @@ abstract class _ReceiptModel implements ReceiptModel {
   @override
   @JsonKey(name: "printer_status")
   String? get printerStatus;
+
+  /// Create a copy of ReceiptModel
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$ReceiptModelImplCopyWith<_$ReceiptModelImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

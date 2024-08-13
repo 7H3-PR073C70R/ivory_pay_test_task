@@ -76,7 +76,9 @@ mixin _$PaymentState {
   }) =>
       throw _privateConstructorUsedError;
 
-  @JsonKey(ignore: true)
+  /// Create a copy of PaymentState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $PaymentStateCopyWith<PaymentState> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -109,6 +111,8 @@ class _$PaymentStateCopyWithImpl<$Res, $Val extends PaymentState>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of PaymentState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -147,6 +151,8 @@ class _$PaymentStateCopyWithImpl<$Res, $Val extends PaymentState>
     ) as $Val);
   }
 
+  /// Create a copy of PaymentState
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $POSModelCopyWith<$Res>? get posModel {
@@ -159,6 +165,8 @@ class _$PaymentStateCopyWithImpl<$Res, $Val extends PaymentState>
     });
   }
 
+  /// Create a copy of PaymentState
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $ReceiptModelCopyWith<$Res>? get receiptModel {
@@ -202,6 +210,8 @@ class __$$InitialImplCopyWithImpl<$Res>
       _$InitialImpl _value, $Res Function(_$InitialImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of PaymentState
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -296,7 +306,9 @@ class _$InitialImpl implements _Initial {
   int get hashCode => Object.hash(runtimeType, viewState, makePaymentState,
       printingState, errorMessage, posModel, receiptModel);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of PaymentState
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$InitialImplCopyWith<_$InitialImpl> get copyWith =>
@@ -404,8 +416,11 @@ abstract class _Initial implements PaymentState {
   POSModel? get posModel;
   @override
   ReceiptModel? get receiptModel;
+
+  /// Create a copy of PaymentState
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$InitialImplCopyWith<_$InitialImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }

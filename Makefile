@@ -1,8 +1,11 @@
+init:
+	(touch .env.development .env.production .env.staging; flutter clean; flutter pub get; dart run build_runner build -d)
+
 get:
 	(flutter pub get)
 
 fresh:
-	(flutter clean;flutter pub get;dart run build_runner build -d)
+	(rm pubspec.lock; flutter clean; flutter pub get; dart run build_runner build -d)
 
 runner:
 	(dart run build_runner build -d)

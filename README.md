@@ -23,6 +23,23 @@
  - .env.production
  - .env.staging
 
+### ENV Files Creation, Dependency Installation and Code Generation
+
+Run the following command to create evn files, install dependencies and generate codes
+
+```sh
+ make init
+```
+
+---
+
+### Alternatively
+
+### Create Env Files
+```sh
+touch .env.development .env.production .env.staging
+```
+
 ### Install dependencies
 ```sh
 flutter pub get
@@ -32,11 +49,7 @@ flutter pub get
 ```sh
 dart run build_runner build --delete-conflicting-outputs
 ```
-Or run the following command to install dependencies and generate codes
-
-```sh
- make fresh
-```
+---
 
 ### Run the app
  The application consists of 3 different variations, and you can utilize the subsequent commands to execute each distinct variation.
@@ -57,6 +70,15 @@ $ flutter run --flavor staging --target lib/main_staging.dart
 # Production
 $ flutter run --flavor production --target lib/main_production.dart
 ```
+
+Please make sure you test with a QR code that returns the following data format else the program will says invalid 
+QR code scanned.
+
+```
+{"crypto_details":{"currency":"Bitcoin","network":"Optimism"},"customer":{"customer_id":"12345","name":"John Doe","crypto_wallet_address":"1A1zP1eP5QGif2DMPTfTL5SLmv7DiffNa","qr_code":"iVBORw0KGgoAKANSUhEUgAARAU"},"transaction_id":"txn_98765"}
+```
+
+copy the above example an paste [here](https://qr.io/?gad_source=1&gclid=Cj0KCQjw5ea1BhC6ARIsAEOG5pwksFdqU-_MSz3oEmDsIk03uqYpnZZ9gst9Ih9ZzzySMf3uN6Qtw0MaAsYpEALw_wcB) under text section.
 
 _\*project works on iOS and Android._
 
@@ -104,6 +126,21 @@ $ open coverage/index.html
 # APK
 
 The apk file can be found [here](ivory_pay.apk)
+
+# <span style="color:red;">Sample QR code Data</span>
+
+```
+{"crypto_details":{"currency":"Bitcoin","network":"Optimism"},"customer":{"customer_id":"12345","name":"John Doe","crypto_wallet_address":"1A1zP1eP5QGif2DMPTfTL5SLmv7DiffNa","qr_code":"iVBORw0KGgoAKANSUhEUgAARAU"},"transaction_id":"txn_98765"}
+```
+
+Online QR Code generator could be found [here](https://qr.io/?gad_source=1&gclid=Cj0KCQjw5ea1BhC6ARIsAEOG5pwksFdqU-_MSz3oEmDsIk03uqYpnZZ9gst9Ih9ZzzySMf3uN6Qtw0MaAsYpEALw_wcB)
+
+# Sample QR Code
+
+<img src="sample_qr.jpeg"></img>
+
+# Screen Record
+<video src="screen_record.mp4" autoplay loop></video>
 
 
 

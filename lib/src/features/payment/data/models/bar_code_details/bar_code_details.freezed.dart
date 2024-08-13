@@ -26,8 +26,12 @@ mixin _$BarCodeDetail {
   @JsonKey(name: 'transaction_id')
   String get transactionId => throw _privateConstructorUsedError;
 
+  /// Serializes this BarCodeDetail to a JSON map.
   Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
-  @JsonKey(ignore: true)
+
+  /// Create a copy of BarCodeDetail
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   $BarCodeDetailCopyWith<BarCodeDetail> get copyWith =>
       throw _privateConstructorUsedError;
 }
@@ -57,6 +61,8 @@ class _$BarCodeDetailCopyWithImpl<$Res, $Val extends BarCodeDetail>
   // ignore: unused_field
   final $Res Function($Val) _then;
 
+  /// Create a copy of BarCodeDetail
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -80,6 +86,8 @@ class _$BarCodeDetailCopyWithImpl<$Res, $Val extends BarCodeDetail>
     ) as $Val);
   }
 
+  /// Create a copy of BarCodeDetail
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CryptoDetailsCopyWith<$Res> get cryptoDetails {
@@ -88,6 +96,8 @@ class _$BarCodeDetailCopyWithImpl<$Res, $Val extends BarCodeDetail>
     });
   }
 
+  /// Create a copy of BarCodeDetail
+  /// with the given fields replaced by the non-null parameter values.
   @override
   @pragma('vm:prefer-inline')
   $CustomerCopyWith<$Res> get customer {
@@ -124,6 +134,8 @@ class __$$BarCodeDetailImplCopyWithImpl<$Res>
       _$BarCodeDetailImpl _value, $Res Function(_$BarCodeDetailImpl) _then)
       : super(_value, _then);
 
+  /// Create a copy of BarCodeDetail
+  /// with the given fields replaced by the non-null parameter values.
   @pragma('vm:prefer-inline')
   @override
   $Res call({
@@ -186,12 +198,14 @@ class _$BarCodeDetailImpl implements _BarCodeDetail {
                 other.transactionId == transactionId));
   }
 
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   int get hashCode =>
       Object.hash(runtimeType, cryptoDetails, customer, transactionId);
 
-  @JsonKey(ignore: true)
+  /// Create a copy of BarCodeDetail
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
   @override
   @pragma('vm:prefer-inline')
   _$$BarCodeDetailImplCopyWith<_$BarCodeDetailImpl> get copyWith =>
@@ -224,8 +238,11 @@ abstract class _BarCodeDetail implements BarCodeDetail {
   @override
   @JsonKey(name: 'transaction_id')
   String get transactionId;
+
+  /// Create a copy of BarCodeDetail
+  /// with the given fields replaced by the non-null parameter values.
   @override
-  @JsonKey(ignore: true)
+  @JsonKey(includeFromJson: false, includeToJson: false)
   _$$BarCodeDetailImplCopyWith<_$BarCodeDetailImpl> get copyWith =>
       throw _privateConstructorUsedError;
 }
