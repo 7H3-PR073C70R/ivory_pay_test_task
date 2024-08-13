@@ -15,7 +15,7 @@ class PageWithNestedRouteScaffold extends StatelessWidget {
   Widget build(BuildContext context) {
     return PopScope(
       canPop: false,
-      onPopInvoked: (_) {
+      onPopInvokedWithResult: (_, __) {
         Navigator.of(context).pop();
       },
       child: AutoRouter(

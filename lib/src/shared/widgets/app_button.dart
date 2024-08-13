@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:ivory_pay_test_task/src/core/constants/app_colors.dart';
 import 'package:ivory_pay_test_task/src/core/extensions/num_extension.dart';
 import 'package:ivory_pay_test_task/src/core/extensions/theme_extension.dart';
-import 'package:ivory_pay_test_task/src/gen/fonts.gen.dart';
 import 'package:ivory_pay_test_task/src/shared/widgets/shrinkable_button.dart';
 
 class AppButton extends StatelessWidget {
@@ -70,7 +69,6 @@ class AppButton extends StatelessWidget {
                     context.textTheme.displayLarge?.copyWith(
                       fontSize: 14.fontSize,
                       fontWeight: FontWeight.w600,
-                      fontFamily: FontFamily.nunitoSans,
                       color: textColor,
                     ),
               ),

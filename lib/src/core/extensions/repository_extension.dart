@@ -104,9 +104,13 @@ extension RepositoryExtension<T> on Future<T> {
   /// project for proper error handling.
   ///
   ///
-  Future<Either<Failure, T>> makeRequest() async {
+  Future<Either<Failure, T>> makeRequest({
+    ValueChanged<T>? onSuccess,
+    VoidCallback? onFailure,
+  }) async {
     try {
       final data = await this;
+      onSuccess?.call(data);
       return Right(data);
     } on DioException catch (e, s) {
       debugPrint(e.toString());
@@ -118,6 +122,7 @@ extension RepositoryExtension<T> on Future<T> {
         ),
       );
     } on ServerException catch (e, s) {
+      onFailure?.call();
       debugPrint(e.toString());
       debugPrint(s.toString());
       debugPrintStack();
@@ -127,6 +132,7 @@ extension RepositoryExtension<T> on Future<T> {
         ),
       );
     } catch (e, s) {
+      onFailure?.call();
       debugPrint(e.toString());
       debugPrint(s.toString());
       debugPrintStack();
