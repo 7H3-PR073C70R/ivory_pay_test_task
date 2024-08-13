@@ -135,12 +135,12 @@ The apk file can be found [here](ivory_pay.apk)
 
 Online QR Code generator could be found [here](https://qr.io/?gad_source=1&gclid=Cj0KCQjw5ea1BhC6ARIsAEOG5pwksFdqU-_MSz3oEmDsIk03uqYpnZZ9gst9Ih9ZzzySMf3uN6Qtw0MaAsYpEALw_wcB)
 
-# Sample QR Code
+# <span style="color:red;">Sample QR Code</span>
 
 <img src="sample_qr.jpeg"></img>
 
 # Screen Record
-<video src="screen_record.mp4" autoplay loop></video>
+<img src="screen_record.gif"></img>
 
 
 
