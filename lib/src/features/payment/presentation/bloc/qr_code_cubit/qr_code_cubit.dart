@@ -20,8 +20,7 @@ class QrCodeCubit extends Cubit<QrCodeState> {
           viewState: ViewState.success,
         ),
       );
-    } catch (_, s) {
-      debugPrint(s.toString());
+    } catch (_) {
       emit(
         state.copyWith(
           viewState: ViewState.error,

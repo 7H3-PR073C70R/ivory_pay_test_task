@@ -25,7 +25,7 @@
 
 ### ENV Files Creation, Dependency Installation and Code Generation
 
-Run the following command to create evn files, install dependencies and generate codes
+Run the following command to create env files, install dependencies and generate codes
 
 ```sh
  make init
